@@ -1,0 +1,261 @@
+:root {
+  --primary-color: #13547a;
+  --secondary-color: #00adb5;
+  --tertiary-color: #222831;
+  --accent-color: #eeeeee;
+
+  --default-font-family: "Urbanist", sans-serif;
+  --accent-font-family: "Roboto Mono", monospace;
+}
+
+nav {
+  padding: 10px 0;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--tertiary-color);
+  transition: all 100ms ease-in-out;
+  align-items: center;
+  margin-top: 10px;
+}
+
+nav a:hover,
+nav li.active a {
+  color: var(--secondary-color);
+}
+
+body {
+  font-family: var(--default-font-family);
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 1.5;
+  color: var(--accent-color);
+}
+h2 {
+  color: var(--secondary-color);
+  font-size: 40px;
+}
+h4 {
+  font-size: 18px;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+p {
+  font-family: var(--accent-font-family);
+  text-align: justify;
+}
+
+.btn-branding {
+  background: var(--primary-color);
+  border-radius: 4px;
+  border: 2px solid var(--tertiary-color);
+  color: var(--accent-color);
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+  font-family: var(--accent-font-family);
+}
+
+.btn-branding:hover {
+  background: var(--tertiary-color);
+  border-radius: 4px;
+  border: 2px solid var(--primary-color);
+  color: var(--secondary-color);
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+  font-family: var(--accent-font-family);
+}
+
+.hero {
+  background: linear-gradient(15deg, var(--primary-color) 0%, #80d0c7 100%);
+  text-align: center;
+  padding: 160px 20px;
+}
+
+.hero h2 {
+  font-family: var(--accent-font-family);
+  color: var(--tertiary-color);
+}
+.hero h3 {
+  font-weight: 300;
+  font: 50px;
+}
+
+.project-links {
+  text-decoration: none;
+  color: var(--secondary-color);
+  text-align: center;
+  align-items: center;
+}
+
+.btn-branding-outline {
+  color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  background-color: var(--tertiary-color);
+  border-radius: 2px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+.btn-branding-outline:hover {
+  color: var(--tertiary-color);
+  border: 2px solid var(--tertiary-color);
+  background-color: var(--secondary-color);
+  border-radius: 2px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+
+.profile-picture{
+    margin-top: 80px;
+}
+
+.content-container {
+  padding: 50px 20px;
+}
+
+.content-container h1 {
+  font-size: 64px;
+  line-height: 80px;
+  color: var(--secondary-color);
+}
+
+.content-container h2 {
+  font-size: 18px;
+  font-family: var(--default-font-family);
+}
+
+.content {
+  margin: 30px;
+}
+
+.content-container .btn-branding {
+  border: 3px solid #00adb5;
+}
+
+.contact-info,
+.contact-info p {
+  text-align: center;
+}
+
+.contact-info a {
+  color: var(--secondary-color);
+}
+
+.contact-info a:hover {
+  color: var(--primary-color);
+}
+
+footer {
+  margin: 60px 0;
+}
+
+footer .contact-box {
+  background: var(--secondary-color);
+  padding: 30px 120px;
+  border-radius: 10px;
+  border: 2px solid var(--primary-color);
+}
+
+footer .contact-box p {
+  margin: 0;
+  color: var(--accent-color);
+}
+
+footer p {
+  color: #00adb5;
+}
+footer .email-link {
+  text-decoration: none;
+  color: var(--tertiary-color);
+  font-size: 24px;
+}
+
+footer .email-link:hover {
+  color: var(--secondary-color);
+}
+
+footer .social-links a {
+  margin: 0 20px;
+  color: white;
+  background: var(--primary-color);
+  padding: 10px 14px;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  color: var(--accent-color);
+  background: var(--tertiary-color);
+}
+
+.source-link,
+.source-link a {
+  font-size: 14px;
+  color: #13547a;
+  text-decoration: none;
+}
+
+.source-link a:hover {
+  color: var(--secondary-color);
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 60px;
+    line-height: 1;
+  }
+
+  .hero {
+    padding: 80px 20px;
+  }
+
+  .hero h2 {
+    font-size: 25px;
+  }
+  .hero h3 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 45px;
+  }
+
+  .project-desciption {
+    padding: 0;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .content-container {
+    text-align: center;
+    padding: 0;
+  }
+  p {
+    text-align: center;
+  }
+  nav a {
+    font-size: 15px;
+  }
+}
