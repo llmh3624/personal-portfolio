@@ -10,6 +10,7 @@
 
 nav {
   padding: 10px 0;
+  border-bottom: 2px solid var(--primary-color);
 }
 
 nav ul {
@@ -43,52 +44,37 @@ body {
 }
 
 h1 {
+  font-size: 64px;
+  line-height: 80px;
   font-weight: 700;
-  font-size: 96px;
-  line-height: 1.5;
-  color: var(--accent-color-2);
+  margin: 0px auto;
+  color: var(--secondary-color);
 }
 h2 {
   color: var(--secondary-color);
   font-size: 40px;
 }
-h4 {
-  font-size: 18px;
-  color: var(--primary-color);
-  font-weight: 500;
+
+h3 {
+  text-align: left;
+  color: var(--accent-color-1);
 }
 
 p {
   font-family: var(--accent-font-family);
   text-align: justify;
-}
-
-.btn-branding {
-  background: var(--primary-color);
-  border-radius: 4px;
-  border: 2px solid var(--accent-color-1);
-  color: var(--accent-color-2);
-  font-size: 18px;
-  line-height: 27px;
-  padding: 15px 30px;
-  font-family: var(--accent-font-family);
-}
-
-.btn-branding:hover {
-  background: var(--accent-color-1);
-  border-radius: 4px;
-  border: 2px solid var(--primary-color);
-  color: var(--secondary-color);
-  font-size: 18px;
-  line-height: 27px;
-  padding: 15px 30px;
-  font-family: var(--accent-font-family);
+  color: var(--accent-color-1);
 }
 
 .hero {
   background: linear-gradient(15deg, var(--primary-color) 0%, #80d0c7 100%);
   text-align: center;
   padding: 160px 20px;
+}
+
+.hero h1 {
+  font-size: 96px;
+  color: var(--accent-color-2);
 }
 
 .hero h2 {
@@ -98,63 +84,41 @@ p {
 .hero h3 {
   font-weight: 300;
   font: 50px;
-}
-
-.project-links {
-  text-decoration: none;
-  color: var(--secondary-color);
   text-align: center;
-  align-items: center;
 }
-
-.btn-branding-outline {
-  color: var(--secondary-color);
-  border: 2px solid var(--secondary-color);
-  background-color: var(--accent-color-1);
-  border-radius: 2px;
-  font-size: 18px;
-  line-height: 27px;
-  padding: 15px 30px;
-}
-.btn-branding-outline:hover {
-  color: var(--accent-color-1);
-  border: 2px solid var(--accent-color-1);
-  background-color: var(--secondary-color);
-  border-radius: 2px;
-  font-size: 18px;
-  line-height: 27px;
-  padding: 15px 30px;
+.content {
+  padding: 30px;
 }
 
 .profile-picture {
-  margin-top: 80px;
+  margin-top: 90px;
 }
 
-.content-container {
-  padding: 50px 20px;
-}
-
-.content-container h1 {
-  font-size: 64px;
-  line-height: 80px;
+.about-me-container h2 {
+  font-size: 25px;
   color: var(--secondary-color);
 }
 
-.content-container h2 {
-  font-size: 18px;
-  font-family: var(--default-font-family);
+.about-me-information {
+  padding: 30px;
 }
 
-.content {
-  margin: 30px;
+.skills-information {
+  color: var(--primary-color);
+  font-size: 40px;
+  margin: 0px auto;
 }
 
-.content-container .btn-branding {
-  border: 3px solid #00adb5;
+.skills-information p {
+  font-size: 15px;
+  text-align: center;
 }
 
-.contact-info,
 .contact-info p {
+  text-align: center;
+}
+
+.contact-info h3 {
   text-align: center;
 }
 
@@ -167,11 +131,10 @@ p {
 }
 
 footer {
-  margin: 60px 0;
+  margin-top: 60px;
 }
 
-
-footer .social-links a {
+.social-links a {
   margin: 0 20px;
   color: white;
   background: var(--primary-color);
@@ -181,7 +144,7 @@ footer .social-links a {
   transition: all 100ms ease-in-out;
 }
 
-footer .social-links a:hover {
+.social-links a:hover {
   color: var(--accent-color-2);
   background: var(--accent-color-1);
 }
@@ -218,16 +181,11 @@ footer .social-links a:hover {
     font-size: 45px;
   }
 
-  .project-desciption {
-    padding: 0;
-    text-align: center;
-    font-size: 15px;
-  }
-
   .content-container {
     text-align: center;
     padding: 0;
   }
+
   p {
     text-align: center;
   }
