@@ -41,14 +41,13 @@ nav li.active a {
 
 body {
   font-family: var(--default-font-family);
-  
 }
 
 h1 {
   font-size: 64px;
   line-height: 80px;
   font-weight: 700;
-  margin: 0px auto;
+
   color: var(--secondary-color);
 }
 h2 {
@@ -91,6 +90,19 @@ p {
   padding: 30px;
 }
 
+.website-buttons button {
+  border: 2px solid var(--primary-color);
+  background-color: var(--secondary-color);
+  border-radius: 3px;
+  padding: 10px 30px;
+}
+
+.website-buttons button a {
+  color: var(--accent-color-2);
+  text-decoration: none;
+  font-size: 25px;
+}
+
 .profile-picture {
   margin-top: 90px;
 }
@@ -115,19 +127,18 @@ p {
   text-align: center;
 }
 
-.skills-icons{
+.skills-icons {
   margin: 30px;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
-
 }
 
-.skill-icon img{
+.skill-icon img {
   width: 35%;
 }
 
-.skill-icon p{
+.skill-icon p {
   text-align: center;
   color: var(--accent-color-1);
   opacity: 80%;
@@ -181,7 +192,7 @@ footer {
 
 @media (max-width: 900px) {
   h1 {
-    font-size: 60px;
+    font-size: 20px;
     line-height: 1;
   }
 
@@ -189,11 +200,24 @@ footer {
     padding: 80px 20px;
   }
 
+  .hero h1 {
+    font-size: 40px;
+  }
+
   .hero h2 {
-    font-size: 25px;
+    font-size: 18px;
   }
   .hero h3 {
     font-size: 20px;
+  }
+
+  .website-buttons {
+    display: grid;
+    grid-template-rows: 1fr;
+  }
+
+  .website-buttons button a {
+    font-size: 12px;
   }
 
   h2 {
@@ -205,6 +229,10 @@ footer {
     padding: 0;
   }
 
+  .personal-bio p{
+    font-size: 12px;
+  }
+  
   p {
     text-align: center;
   }
