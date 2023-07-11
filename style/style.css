@@ -99,6 +99,7 @@ p {
 
 .website-buttons button a {
   color: var(--accent-color-2);
+  font-family: var(--accent-font-family);
   text-decoration: none;
   font-size: 25px;
 }
@@ -229,10 +230,10 @@ footer {
     padding: 0;
   }
 
-  .personal-bio p{
+  .personal-bio p {
     font-size: 12px;
   }
-  
+
   p {
     text-align: center;
   }
