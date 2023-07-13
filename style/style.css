@@ -119,8 +119,7 @@ button:hover {
   margin-top: 0px;
 }
 
-.about-me-container h2 {
-  font-size: 25px;
+.about-me h3 {
   color: var(--secondary-color);
 }
 
@@ -197,7 +196,12 @@ button:hover {
 }
 
 footer {
-  margin-top: 60px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.social-links {
+  padding-bottom: 20px;
 }
 
 .social-links a {
