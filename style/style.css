@@ -1,6 +1,6 @@
 :root {
   --primary-color: #13547a;
-  --secondary-color:#0aabb4;
+  --secondary-color: #0aabb4;
   --accent-color-1: #222831;
   --accent-color-2: #eeeeee;
 
@@ -34,7 +34,9 @@ nav a {
   margin-top: 10px;
 }
 
-nav li > a:hover,nav li.active > a, .main-menu:hover {
+nav li > a:hover,
+nav li.active > a,
+.main-menu:hover {
   color: #0aabb4;
 }
 
@@ -61,6 +63,7 @@ h2 {
 h3 {
   text-align: left;
   color: var(--accent-color-1);
+  margin-top: 30px;
 }
 
 p {
@@ -71,13 +74,22 @@ p {
 
 .hero {
   background: linear-gradient(15deg, var(--primary-color) 0%, #80d0c7 100%);
-  text-align: center;
-  padding: 160px 20px;
+  text-align: left;
+  padding: 20px;
 }
 
+.hero .my-name {
+  overflow: hidden;
+}
 .hero h1 {
   font-size: 96px;
   color: var(--accent-color-2);
+  text-shadow: -3px 1px 13px var(--primary-color);
+  white-space: nowrap;
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+  animation: typing 4s steps(22, end) forwards, blink 1s infinite;
+  margin: auto;
+  padding: 30px 0px;
 }
 
 .hero h2 {
@@ -87,10 +99,50 @@ p {
 .hero h3 {
   font-weight: 300;
   font: 50px;
-  text-align: center;
 }
 .content {
   padding: 30px;
+}
+.introduction-container {
+  position: relative;
+}
+.introduction {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.mini-introduction {
+  padding: 100px;
+}
+
+.mini-introduction h4 {
+  text-align: center;
+  color: var(--accent-color-1);
+  text-shadow: 0px 2px 10px var(--secondary-color);
+  font-weight: 300;
+}
+
+@keyframes typing {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    border-right: 2px solid transparent;
+  }
+
+  50% {
+    border-right: 2px solid var(--accent-color-1);
+  }
 }
 
 button {
@@ -118,6 +170,9 @@ button:hover {
 }
 
 .profile-picture {
+  margin-top: 0px;
+}
+.temporal-picture {
   margin-top: 0px;
 }
 
