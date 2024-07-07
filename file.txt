@@ -1,0 +1,24 @@
+
+          <div class="text-center project" data-language="html-css-javascript">
+            <img
+              src="images/projects/dictionary.png"
+              class="img-fluid mb-3 rounded"
+              alt="Dictionary Project"
+            />
+            <h3 class="text-center m-0">Dictionary Project</h3>
+            <p class="text-center text-muted">
+              Built with HTML, CSS, JavaScript, VS Code, API, Github, Bootstrap,
+              Hosting and React
+            </p>
+            <a
+              href="https://clinquant-cheesecake-251ae6.netlify.app/"
+              target="_blank"
+              class="project-links text-center mt-4 mb-5"
+              title="Dictionary Project"
+            >
+              Learn more
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>

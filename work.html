@@ -68,60 +68,76 @@
         </ul>
       </nav>
     </div>
-    <div class="content container">
-      <div class="text-center">
-        <h1>My Work</h1>
-        <h3 class="mb-5 text-center">
-          Take a look at what I've been working on!
-        </h3>
-        <div class="row text-center">
-          <div class="col-md-6 mb-4 text-center">
+    <div class="content container text-center">
+      <h1>My Work</h1>
+      <h3 class="mb-5 text-center">
+        Take a look at what I've been working on!
+      </h3>
+      <div class="filters">
+        <button onclick="filterProjects('all')" class="filter-buttons">
+          All
+        </button>
+        <button onclick="filterProjects('JavaScript')" class="filter-buttons">
+          JavaScript
+        </button>
+      </div>
+
+      <div class="work-container">
+        <div class="work-project" data-language="JavaScript">
+          <div class="project-images">
             <img
               src="images/projects/bubbletea.png"
-              class="img-fluid mb-3 rounded"
+              class="img-fluid mb-3 rounded project-image"
               alt="Bubble Tea Landing Page"
             />
-            <h3 class="text-center m-0">Bubble Tea Landing Page</h3>
-            <p class="text-center text-muted">
-              Built with HTML, CSS, and JavaScript
-            </p>
+          </div>
+          <div class="project-info">
+            <h3>Bubble Tea Landing Page</h3>
+            <p>Built with HTML, CSS, and JavaScript</p>
             <a
               href="https://eloquent-souffle-00e30c.netlify.app/"
               target="_blank"
               title="Bubble Tea Landing Page"
               class="project-links"
             >
-              Learn more</a
+              View</a
             >
           </div>
-          <div class="col-md-6 mb-4">
+        </div>
+
+        <div class="work-project" data-language="JavaScript">
+          <div class="project-images">
             <img
               src="images/projects/hobby.png"
               class="img-fluid mb-3 rounded"
               alt="Cooking Hobby Project"
             />
-            <h3 class="text-center m-0">Cooking Hobby Project</h3>
-            <p class="text-center text-muted">
-              Built with HTML, CSS, and JavaScript
-            </p>
+          </div>
+          <div class="project-info">
+            <h3>Cooking Hobby Project</h3>
+            <p>Built with HTML, CSS, and JavaScript</p>
             <a
               href="https://fanciful-zabaione-ca383f.netlify.app/"
               class="project-links text-center mt-4 mb-5"
               target="_blank"
               title="Cooking Hobby Project"
             >
-              Learn more
-            </a>
+              View</a
+            >
           </div>
+        </div>
 
-          <div class="col-md-6 mb-4">
+        <div class="work-project" data-language="JavaScript">
+          <div class="project-images">
             <img
               src="images/projects/weather.png"
               class="img-fluid mb-3 rounded"
               alt="Weather Project"
             />
-            <h3 class="text-center m-0">Weather Project</h3>
-            <p class="text-center text-muted">
+          </div>
+          <div class="project-info">
+            <h3>Weather Project</h3>
+            <p>
               Built with HTML, CSS, JavaScript, VS Code, API, Github, Bootstrap
               and Hosting
             </p>
@@ -131,17 +147,22 @@
               class="project-links text-center mt-4 mb-5"
               title="Weather Project"
             >
-              Learn more
-            </a>
+              View</a
+            >
           </div>
-          <div class="col-md-6 mb-4">
+        </div>
+
+        <div class="work-project" data-language="JavaScript">
+          <div class="project-images">
             <img
               src="images/projects/worldclock.png"
               class="img-fluid mb-3 rounded"
               alt="World Clock Project"
             />
-            <h3 class="text-center m-0">World Clock Project</h3>
-            <p class="text-center text-muted">
+          </div>
+          <div class="project-info">
+            <h3>World Clock Project</h3>
+            <p>
               Built with HTML, CSS, JavaScript, VS Code, API, Github, Bootstrap
               and Hosting
             </p>
@@ -151,17 +172,22 @@
               class="project-links text-center mt-4 mb-5"
               title="World Clock Project"
             >
-              Learn more
-            </a>
+              View</a
+            >
           </div>
-          <div class="col-md-6 mb-4">
+        </div>
+
+        <div class="work-project" data-language="JavaScript">
+          <div class="project-images">
             <img
               src="images/projects/portfolio.png"
               class="img-fluid mb-3 rounded"
               alt="Personal Portfolio Project"
             />
-            <h3 class="text-center m-0">Personal Portfolio Project</h3>
-            <p class="text-center text-muted">
+          </div>
+          <div class="project-info">
+            <h3>Personal Portfolio Project</h3>
+            <p>
               Built with HTML, CSS, JavaScript, VS Code, Github, Bootstrap,
               Flexbox, SEO and Responsive and Hosting
             </p>
@@ -171,17 +197,22 @@
               class="project-links"
               title="Personal Portfolio Project text-center mt-4 mb-5"
             >
-              Learn more
-            </a>
+              View</a
+            >
           </div>
-          <div class="col-md-6 mb-4">
+        </div>
+
+        <div class="work-project" data-language="JavaScript">
+          <div class="project-images">
             <img
               src="images/projects/travel.png"
               class="img-fluid mb-3 rounded"
               alt="Palma Travel Project"
             />
-            <h3 class="text-center m-0">Palma Travel Project</h3>
-            <p class="text-center text-muted">
+          </div>
+          <div class="project-info">
+            <h3>Palma Travel Project</h3>
+            <p>
               Built with HTML, CSS, JavaScript, VS Code, Github, Bootstrap,
               Flexbox, SEO and Responsive and Hosting
             </p>
@@ -191,17 +222,22 @@
               class="project-links"
               title="Palma Travel Project text-center mt-4 mb-5"
             >
-              Learn more
-            </a>
+              View</a
+            >
           </div>
-          <div class="col-md-6 mb-4">
+        </div>
+
+        <div class="work-project" data-language="JavaScript">
+          <div class="project-images">
             <img
               src="images/projects/weatherreact.png"
               class="img-fluid mb-3 rounded"
               alt="Weather React Project"
             />
-            <h3 class="text-center m-0">Weather React Project</h3>
-            <p class="text-center text-muted">
+          </div>
+          <div class="project-info">
+            <h3>Weather React Project</h3>
+            <p>
               Built with HTML, CSS, JavaScript, VS Code, API, Github, Bootstrap,
               Hosting and React
             </p>
@@ -211,17 +247,22 @@
               class="project-links text-center mt-4 mb-5"
               title="Weather React Project"
             >
-              Learn more
-            </a>
+              View</a
+            >
           </div>
-          <div class="col-md-6 mb-4">
+        </div>
+
+        <div class="work-project" data-language="JavaScript">
+          <div class="project-images">
             <img
               src="images/projects/dictionary.png"
               class="img-fluid mb-3 rounded"
               alt="Dictionary Project"
             />
-            <h3 class="text-center m-0">Dictionary Project</h3>
-            <p class="text-center text-muted">
+          </div>
+          <div class="project-info">
+            <h3>Dictionary Project</h3>
+            <p>
               Built with HTML, CSS, JavaScript, VS Code, API, Github, Bootstrap,
               Hosting and React
             </p>
@@ -231,8 +272,8 @@
               class="project-links text-center mt-4 mb-5"
               title="Dictionary Project"
             >
-              Learn more
-            </a>
+              View</a
+            >
           </div>
         </div>
       </div>
@@ -274,5 +315,6 @@
         | 2024
       </h5>
     </footer>
+    <script src="src/index.js"></script>
   </body>
 </html>
