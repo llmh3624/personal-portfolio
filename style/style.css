@@ -175,6 +175,7 @@ button:hover {
 .temporal-picture {
   margin-top: 0px;
   border: 1px solid white;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .about-me h3 {
@@ -235,10 +236,13 @@ button:hover {
 .work-container {
   display: grid;
   gap: 5%;
-  align-items: center;
+  row-gap: 2%;
   margin: auto;
+  height: fit-content;
   grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
-  padding-bottom: 8%;
+  padding: 5% 0%;
+  height: 100%;
+  margin-bottom: 13%;
 }
 
 .work-project {
@@ -246,6 +250,7 @@ button:hover {
   gap: 3%;
   grid-template-columns: 45% 52%;
   align-items: start;
+  height: fit-content;
 }
 
 .project-images {
@@ -332,69 +337,4 @@ footer {
   color: var(--secondary-color);
 }
 
-@media (max-width: 900px) {
-  h1 {
-    font-size: 45px;
-    line-height: 1;
-  }
 
-  h2 {
-    font-size: 45px;
-  }
-
-  h3 {
-    font-size: 20px;
-  }
-
-  .hero {
-    padding: 50px;
-  }
-
-  .hero h1 {
-    font-size: 60px;
-  }
-
-  .hero h2 {
-    font-size: 25px;
-  }
-  .hero h3 {
-    font-size: 22px;
-  }
-
-  .website-buttons {
-    display: grid;
-    grid-template-rows: 1fr;
-  }
-
-  .website-buttons button a {
-    font-size: 12px;
-  }
-
-  .content-container {
-    text-align: center;
-    padding: 0;
-  }
-
-  .personal-bio p {
-    font-size: 12px;
-  }
-
-  img {
-    width: 40%;
-    display: block;
-    margin: 0px auto;
-  }
-
-  .skills-icons {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .skill-icon img {
-    width: 30px;
-  }
-
-  nav a {
-    font-size: 15px;
-  }
-}
