@@ -145,7 +145,7 @@ p {
   }
 }
 
-button {
+.nav-buttons {
   border: 2px solid var(--secondary-color);
   background-color: var(--accent-color-1);
   border-radius: 3px;
@@ -162,7 +162,7 @@ button {
   font-size: 25px;
 }
 
-button:hover {
+.nav-buttons:hover {
   border: 2px solid var(--accent-color-1);
   transform: scale(1.1);
   background: linear-gradient(15deg, var(--primary-color) 0%, #80d0c7 100%);
@@ -226,11 +226,7 @@ button:hover {
 .filter-buttons {
   background-color: var(--primary-color);
   color: var(--accent-color-2);
-}
-
-.filter-buttons:hover {
-  background-color: var(--secondary-color);
-  transition: all 400ms ease-in-out;
+  margin: 0 2%;
 }
 
 .work-container {
@@ -336,5 +332,3 @@ footer {
 .source-link a:hover {
   color: var(--secondary-color);
 }
-
-
