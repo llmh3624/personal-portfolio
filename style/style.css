@@ -2,8 +2,7 @@
   --primary-color: #13547a;
   --secondary-color: #0aabb4;
   --accent-color-1: #222831;
-  --accent-color-2: #eeeeee;
-
+  --accent-color2: #eeeeee;
   --default-font-family: "Urbanist", sans-serif;
   --accent-font-family: "Roboto Mono", monospace;
 }
@@ -53,8 +52,9 @@ h1 {
   line-height: 80px;
   font-weight: 700;
   text-align: center;
-  color: var(--secondary-color);
+  color: #0aabb4;
 }
+
 h2 {
   color: var(--secondary-color);
   font-size: 40px;
@@ -120,7 +120,7 @@ p {
 .mini-introduction h4 {
   text-align: center;
   color: var(--accent-color-1);
-  text-shadow: 0px 2px 10px var(--secondary-color);
+
   font-weight: 300;
 }
 
@@ -179,7 +179,7 @@ p {
 }
 
 .about-me h3 {
-  color: var(--secondary-color);
+  color: #0aabb4;
 }
 
 .about-me-information {
@@ -189,7 +189,6 @@ p {
 .shecodes-link {
   color: var(--secondary-color);
   font-weight: 500;
-  text-decoration: none;
 }
 
 .shecodes-link:hover {
