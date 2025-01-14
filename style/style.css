@@ -101,6 +101,16 @@ p {
   font-weight: 300;
   font: 50px;
 }
+
+.profile-picture {
+  margin-top: 0px;
+}
+.temporal-picture {
+  margin-top: 0px;
+  border: 1px solid white;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
 .content {
   padding: 30px;
 }
@@ -190,14 +200,7 @@ p {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.profile-picture {
-  margin-top: 0px;
-}
-.temporal-picture {
-  margin-top: 0px;
-  border: 1px solid white;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
-}
+
 
 .about-me h3 {
   color: #0aabb4;
@@ -333,7 +336,7 @@ footer {
 .social-links a {
   margin: 0 20px;
   color: white;
-  background: var(--primary-color);
+  background: #13547a;
   padding: 10px 14px;
   border-radius: 50%;
   font-size: 18px;
@@ -341,8 +344,7 @@ footer {
 }
 
 .social-links a:hover {
-  color: var(--accent-color-2);
-  background: var(--accent-color-1);
+  background: #222831;
 }
 
 .source-link,
